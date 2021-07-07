@@ -20,12 +20,37 @@ h2{
     margin-bottom: 30px;
 }
 
-/* l'ultimo container nel main  */
-main .container:last-of-type{
-    text-align: center;
+li{
+    list-style-type: none;
 }
 
-main .container:last-of-type img{
+a{
+    text-decoration: none;
+}
+
+/* l'ultimo container nel main  */
+.main-foot{
+    text-align: center;
+}
+.main-foot .buttons li{
+    width: 300px;
+    margin: 0 auto;
+}
+.stars{
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    width: 600px;
+    height: 50px;
+}
+.stars>h2{
+    font-size: 1.5em;
+}
+
+
+
+.main-foot img{
     width: 100%;
     height: 100%;
 }
@@ -115,7 +140,8 @@ nav li:hover{
 
 
 /* grandezze e caratteristische bottoni */
-.buttons span{
+.buttons li,
+.main-foot li{
     border-radius: 30px;
     padding: 20px;
     color: black;
@@ -123,16 +149,28 @@ nav li:hover{
     cursor: pointer;
 }
 
-.buttons span:first-of-type{
-    background-color: white;
+.main-foot li{
+    background-color: rgb(126, 135, 223);
+    width: 100%;
 }
 
-.buttons span:last-of-type{
-    background-color: rgb(0, 0, 0);
+.jumboard .buttons li:first-of-type{
+    background-color: white;
+}
+.jumboard .buttons li:last-of-type{
+    background-color: black;
+}
+.jumboard .buttons li:first-of-type a,
+.main-foot a
+{
+    color: black;
+}
+#black-button{
     color: white;
 }
 
-.buttons span:hover,
+
+.buttons li:hover,
 .login:hover{
     font-weight: bold;  
 }
