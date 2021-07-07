@@ -44,7 +44,6 @@ header li,
 }
 
 .container{
-    /* height: 25%; */
     max-width: 1300px;
     min-width: 800px;
     margin: 0 auto;
@@ -61,5 +60,22 @@ nav li:hover{
 }
 .login:hover{
     color:rgb(63, 28, 156);
+}
+
+.jumboard{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.jumboard>h1{  
+    font-size: 3em;
+    padding: 10% 0 5% 0;
     
+}
+
+.jumboard p{
+    width: 51%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  
 }
