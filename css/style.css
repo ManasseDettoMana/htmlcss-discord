@@ -17,8 +17,8 @@ header{
 
 .logo{
     margin-right: 200px;
+    cursor: pointer;
 }
-
 .login{
     background-color: white;
     border-radius: 20px;
@@ -36,6 +36,7 @@ nav ul li{
     padding-right: 50px;
     height: 100%;
     list-style-type: none;
+    cursor: pointer;
 }
 
 header li,
@@ -45,7 +46,7 @@ header li,
 
 .container{
     max-width: 1300px;
-    min-width: 800px;
+    min-width: 1300px;
     margin: 0 auto;
     font-size: 18px;
     padding-top: 30px;
@@ -58,9 +59,7 @@ header li,
 nav li:hover{
     text-decoration: underline ;
 }
-.login:hover{
-    color:rgb(63, 28, 156);
-}
+
 
 .jumboard{
     color: white;
@@ -72,10 +71,34 @@ nav li:hover{
     padding: 10% 0 5% 0;
     
 }
-
 .jumboard p{
     width: 51%;
     margin: 0 auto;
     padding-bottom: 10px;
-  
+}
+
+.buttons{
+    padding-top: 30px;
+}
+
+.buttons span{
+    border-radius: 30px;
+    padding: 20px;
+    color: black;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.buttons span:first-of-type{
+    background-color: white;
+}
+
+.buttons span:last-of-type{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.buttons span:hover,
+.login:hover{
+    font-weight: bold;
 }
